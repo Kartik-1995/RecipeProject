@@ -25,11 +25,38 @@
             border-radius: 12px;
             align-items: center;
             justify-content: center;
+            align-content: center;
+            width: fit-content;
+            padding: 32px 32px 32px 32px;
            
         }
-        h2, h4 {
-            background-color: aliceblue;
+        h3 {
+            color: var(--color-white);
             text-align: center;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        h5 {
+            color: var(--color-green);
+            text-align: center;
+            margin: 0px;
+            margin-top: 8px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       img {
+            padding: auto;
+            width: 30%;
+            border-radius: 120px;
         }
 
         body {
@@ -38,34 +65,59 @@
         a, a:link {
             display: block;
             text-align: center;
-            padding: 10px;
+            padding: 12px;
             color: var(--color-white);
             text-decoration: none;
             background-color: var(--color-grey-700);
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: 8px;
+            font-family: Arial, Helvetica, sans-serif;
             
+            
+        }
+        p {
+            color: #aaaaaa;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
         }
         a:hover {
             display: block;
             text-align: center;
-            padding: 10px;
+            padding: 12px 32px;
             text-decoration: none;
             color: var(--color-grey-900);
             background-color: var(--color-green);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
+            border-radius: 8px;
+            text-decoration: none;
+            width: fill;
 
         }
-        .buttonGroup {}
+        .buttonGroup {
+            margin-left: -5px ;
+            margin-right: -5px ;
+        }
 
     </style>
 </head>
 <body>
     <div class= "main">
         <div class = "card">
-            <img src = "file:///Users/kartikkataria/Documents/HTMLchallenges/SocialLinksProfile/social-links-profile-main/assets/images/avatar-jessica.jpeg">
-            <h2> Jessica Randall</h2>
-            <h4>Indian, United States</h4>
+            <div class = "image"><img src = "file:///Users/kartikkataria/Documents/HTMLchallenges/SocialLinksProfile/social-links-profile-main/assets/images/avatar-jessica.jpeg"></div>
+            <h3> Jessica Randall</h3>
+            <h5>Indiana, United States</h5>
             <p>"Product Designer and foodies"</p>
             <div class = "buttonGroup">
-                <a href = "https://github.com/"> Github </a>
+                <a href = "https://github.com/" target="_blank"> Github </a>
                 <a href = "https://www.linkedin.com/feed/"> Linkedin </a>
                 <a href = "https://x.com/home"> Twitter </a>
                 <a href = "https://www.kartikkataria.com/"> Website </a>
