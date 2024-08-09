@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>blogPreview</title>
+    <style>
+        :root {
+            --color-yellow:  hsl(47, 88%, 63%);
+            --color-white: #ffffff;
+            --color-grey-500: hsl(0, 0%, 42%);
+            --color-grey-950: hsl(0, 0%, 7%);
+            
+
+            --spacing-050: 4px;
+            --spacing-100: 8px;
+            --spacing-200: 12px;
+            --spacing-500: 24px;
+
+
+        }
+        body {
+            margin: 0px;
+        }
+        .mainDiv {
+           background-color: var(--color-yellow);
+           height: 100vh;
+           width: 100vw;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin: 0px;
+           padding: 0px;
+        }
+
+        .card {
+            border-radius: 20px;
+            background-color: var(--color-white);
+            padding: var(--spacing-500) ;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--spacing-500);
+            border: 1px solid black;
+            box-shadow: 8px 8px 0px 0px black;
+            transition: box-shadow 0.3s ease;
+
+        }
+
+    
+
+        img {
+            border-radius: 10px;
+            width: 300px; height: auto;
+        }
+
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            font-family:  "Figtree";
+            gap: var(--spacing-500);
+        }
+
+        .topcontent {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-200);
+
+
+        }
+        .tag {
+            background-color: var(--color-yellow);
+            padding: 8px;
+            border-radius: 4px;
+            width: fit-content;
+        }
+        p {
+            padding:0px;
+            margin: 0px;
+            color: var(--color-grey-950);
+           
+        }
+
+        .subtext {
+            line-height: 150%;
+            color: var(--color-grey-500);
+        }
+      #i {
+           width: 32px;
+           height: 32px;
+        }
+
+        .author {
+            display: flex;
+            direction: row;
+            align-items: center;
+            gap: var(--spacing-200);
+        }
+
+        h2, h5 {
+            margin: 0px;
+        }
+
+        h2:hover {
+            color: var(--color-yellow);
+            
+        }
+
+        .card:hover {
+            box-shadow: 16px 16px 0px 0px black;
+        }
+
+
+    </style>
+    </head>
+</head>
+<body>
+    <div class = "mainDiv">
+       <div class = "card">
+            <div class  = "image">
+                <img src = "file:///Users/kartikkataria/Documents/HTMLchallenges/blogpreview/blog-preview-card-main/assets/images/illustration-article.svg">
+            </div>
+            <div class = "content">
+                <div class ="topcontent">
+                    <p class = "tag"><b>Learning</b></p>
+                    <p>Published on Dec 21, 2023</p>
+                    <h2>HTML & CSS Foundations</h2>
+                    <p class = "subtext">These languages are backbone of every website, defining structure, content and presentation</p>
+                </div>
+                <div class ="author">
+                    <img id ="i" src = "file:///Users/kartikkataria/Documents/HTMLchallenges/blogpreview/blog-preview-card-main/assets/images/image-avatar.webp">
+                    <h5>Greg Hooper</h5>
+                </div>
+            </div>
+        </div>   
+    </div>
+</body>
+</html>
